@@ -1,20 +1,26 @@
-# Frontend Mentor - Newsletter sign-up form with success message
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
+This repository contains a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges are designed to help developers improve their coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of Contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### The Challenge
 
-## The challenge
-
-Your challenge is to build out this newsletter form and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+This project aimed to create a newsletter sign-up form with a success message, along with form validation messages for empty fields and incorrectly formatted email addresses. Additionally, the layout needed to be responsive for various screen sizes, and interactive elements were expected to have hover and focus states.
 
 Your users should be able to:
 
@@ -26,74 +32,106 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Screenshot](./assets/images/Screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](AbigailAbenaDadzie.github.io)
+- Live Site URL: [Add live site URL here](https://abigailabenadadzie.github.io/Newsletter-Sign-Up/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My Process
+### Built With
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+Semantic HTML5 Markup: Semantic HTML5 elements provide meaning to the content they contain, making it more understandable for both developers and assistive technologies like screen readers. It improves accessibility and SEO.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+CSS Custom Properties: CSS custom properties, also known as CSS variables, allow for the creation of reusable values throughout a CSS file. They enhance maintainability and flexibility in styling.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Flexbox: Flexbox is a layout model in CSS that allows for the creation of flexible and efficient layouts. It simplifies the alignment and distribution of elements within a container, making it ideal for responsive designs.
 
-## Building your project
+CSS Grid: CSS Grid is another layout model in CSS that enables the creation of complex grid-based layouts with rows and columns. It provides precise control over the placement and sizing of elements within the grid.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Mobile-first Workflow: Mobile-first workflow is a development approach where the initial focus is on designing and implementing the mobile version of a website or application before scaling up to larger screen sizes. It ensures a better user experience on mobile devices and simplifies the process of creating responsive designs.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+React.js - JS Library: React.js is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of an application efficiently. React's component-based architecture simplifies the development process and promotes code reusability.
 
-## Deploying your project
+Next.js - React Framework: Next.js is a React framework that provides features such as server-side rendering, static site generation, and routing out of the box. It simplifies the development of React applications by offering built-in solutions for common tasks and optimizations for performance.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Styled Components - For Styles: Styled Components is a library for styling React components using tagged template literals. It allows developers to write CSS in JavaScript, enabling the creation of highly maintainable and scoped styles for individual components
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### What I Learned
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+During this project, I gained experience in implementing form validation messages and ensuring responsiveness across different devices. Here are some snippets of what I learned:
 
-## Create a custom `README.md`
+```html
+<div class="card-2 hide">
+      <img src="./assets/images/icon-success.svg" class="icon.card-2" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span id="emailText" class="email">ash@loremcompany.com</span>. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </div>
+  </div>
+```
+```css
+@media (max-width: 768px) {
+.card {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+  form {
+    width: 90%;
+  }
+  .card-2 {
+    min-height: 100vh;
+  }
+}
+```
+```js
+console.log(validPattern);
+  if (!emailValue || !validPattern) {
+    errorMessage.innerText = "Valid email required";
+    emailText.innerHTML = email.value;
+    email.style.color = "red";
+    email.style.border = "1px solid red";}
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Continued Development
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+In future projects, I plan to continue focusing on refining my skills in responsive design and improving my understanding of form validation techniques.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Useful Resources
 
-## Submitting your solution
+- [README.md](https://www.frontendmentor.io/community) - This resource helped me understand the requirement of the challenge and how to go about it.
+- [style-guide.md](https://www.frontendmentor.io/community) - This resource also gave me some headson for styling of the form.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Author
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- Website - [Add your name here](AbigailAbenaDadzie.github.io)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
+## Acknowledgments
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+I'd like to acknowledge [Jerome] for their support and guidance throughout this project.
