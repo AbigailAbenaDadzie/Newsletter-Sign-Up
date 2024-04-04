@@ -134,4 +134,4 @@ In future projects, I plan to continue focusing on refining my skills in respons
 
 ## Acknowledgments
 
-I'd like to acknowledge [Jerome] for their support and guidance throughout this project.
+I'd like to acknowledge Jerome for his support during this project.
